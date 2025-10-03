@@ -1,3 +1,4 @@
+import NotFound from '@/components/not-found'
 import { properties } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
@@ -16,7 +17,7 @@ const Lettings = async ({params}: {params: Promise<{id: string}>}) => {
      const data = properties.find(item => String(item.id) === id)
  
  
-   if(!data) return <div>Data Not Found</div>
+   if(!data) return <NotFound />
 
   return (
     <main className='pt-25'>

@@ -1,4 +1,5 @@
 
+import NotFound from '@/components/not-found'
 import { properties } from '@/constants'
 import { instrumentSerif } from '@/fonts/font'
 import Image from 'next/image'
@@ -19,7 +20,7 @@ const Sale = async  ({params}: {params: Promise<{id: string}>}) => {
 
 
 
-  if(!data) return <div>Data Not Found</div>
+  if(!data) return <NotFound />
 
   return (
     <main className='pt-25'>
