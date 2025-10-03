@@ -13,7 +13,7 @@ const About = () => {
           <p className=' w-full text-sm px-4 md:w-[50%] text-center'>Our mission is simple but pivotal: to make property transactions as smooth, transparent, and rewarding as possible for our clients. We accomplish this by adhering to our core values, which include integrity, excellence, professionalism, and a deep-seated commitment to serving the best interests of our clients.</p>
         </section>
         <section className='bg-black/20 absolute w-full h-[80vh] left-0 top-0' />
-        <Image src={"/aboutHero.jpg"} alt='hero image about' width={1000} height={1000} className='w-full h-full' />
+        <Image priority fetchPriority='high' src={"/aboutHero.jpg"} alt='hero image about' width={1000} height={1000} className='w-full h-full' />
       </section>
       <AboutSection />
       <section className='flex flex-col py-5'>
