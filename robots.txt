@@ -1,0 +1,16 @@
+# robots.txt for Zayphire Ecommerce
+
+User-agent: *
+# Allow all crawlers to index site
+Allow: /
+Allow: /about-Use
+Allow: /contact
+Allow: /fess
+Allow: /insight
+Allow: /lettings
+Allow: /login
+Allow: /signup
+Allow: /our-projects
+Allow: /sales
+Allow: /team
+Allow: /valuation
