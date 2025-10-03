@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <section className="h-dvh ">
         <h1 className={`text-font w-full md:w-[80%] absolute text-[36px] sm:text-[40px] md:text-[50px] bg-main left-0  md:left-22 lg:bottom-8 bottom-0 text-center xl:left-35 ${instrumentSerif.className}`}>&apos;&apos;Your Real Estate Partner to help you sell, rent, buy and let.&apos;&apos;</h1>
-        <Image priority fetchPriority="high" src={"/main.jpg"} width={1000} height={1000} alt="main hero image" className="w-full h-[90%]  object-center object-cover " />
+        <Image priority fetchPriority="high" src={"/main.webp"} width={1000} height={1000} alt="main hero image" className="w-full h-[90%]  object-center object-cover " />
       </section>
       <SearchProperty />
       <Feature />
