@@ -31,7 +31,7 @@ const FeatureProperties = () => {
           <Link href={`/${item.type === "buying" ? "sales" : "lettings"}/${item.id}`}>
             <div className='w-full h-[150px] sm:h-[160px]'>
               <h3 className={`absolute text-xl text-black left-2 top-2 px-2 bg-main`}>{item.type}</h3>
-              <Image className='w-full h-full' src={item.images[0]} alt={item.address} width={100} height={100} />
+              <Image className='w-full object-cover object-center h-full' src={item.images[0]} alt={item.address} width={100} height={100} />
             </div>
             <h3 className='text-center font-xl font-bold'>${item.price}</h3>
             <p className='text-center font-[400]'>{item.address}</p>
