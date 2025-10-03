@@ -25,8 +25,8 @@ const Sale = async  ({params}: {params: Promise<{id: string}>}) => {
     <main className='pt-25'>
       <h1 className={`${instrumentSerif.className} text-6xl mb-5 text-center`}>{data.address}</h1>
        <section className='flex flex-col md:flex-row'>
-          <Image className= 'w-full md:w-[50%] object-cover object-bottom' src={data.images[0]} alt='image' width={500} height={500} />
-          <Image className= 'w-full md:w-[50%] object-cover object-bottom' src={data.images[1]} alt='image' width={500} height={500} />
+          <Image priority fetchPriority='high' className= 'w-full md:w-[50%] object-cover object-bottom' src={data.images[0]} alt='image' width={500} height={500} />
+          <Image priority fetchPriority='high' className= 'w-full md:w-[50%] object-cover object-bottom' src={data.images[1]} alt='image' width={500} height={500} />
         </section>
         <div className='flex flex-col items-center md:flex-row justify-between py-10 px-5 md:px-20'>
         <div>

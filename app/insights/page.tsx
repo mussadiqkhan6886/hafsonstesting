@@ -22,6 +22,8 @@ const InsightList = () => {
             {/* Image */}
             <div className="relative h-48 w-full">
               <Image
+                priority
+                fetchPriority='high'
                 src={item.image}
                 alt={item.slug}
                 fill

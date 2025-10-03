@@ -9,6 +9,7 @@ const Page = () => {
       {/* Hero Section */}
       <section>
         <Image
+          fetchPriority='high'
           className="w-full h-[80vh] object-cover object-bottom "
           src={"/team.jpg"}
           alt="team image"

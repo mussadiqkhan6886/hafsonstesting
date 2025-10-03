@@ -20,7 +20,7 @@ const Lettings = () => {
           <p className=' w-full text-base md:text-lg px-4 md:w-[50%] text-center'>We know that there is much more to selling a property than recommending an asking price and marketing it to buyers. We guide you through every step of the way, from advising on how best to present your home for viewings, to negotiating the sale and liaising with solicitors</p>
         </section>
         <section className='bg-black/20 absolute w-full h-[80vh] left-0 top-0' />
-          <Image src={"/aboutHero.jpg"} alt='hero image about' width={1000} height={1000} className='w-full h-full' />
+          <Image priority fetchPriority='high' src={"/aboutHero.jpg"} alt='hero image about' width={1000} height={1000} className='w-full h-full' />
         </section>
         <section className='flex flex-col gap-10 my-15 px-5 md:px-10 lg:px-20'>
           <section className='flex flex-col gap-8'>

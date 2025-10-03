@@ -11,6 +11,8 @@ const Projects = () => {
       {/* Hero Section */}
       <section className="relative w-full h-[70vh] flex items-center justify-center">
         <Image
+        priority
+        fetchPriority='high'
           src="/projectHero.jpg"
           alt="project hero"
           width={1600}

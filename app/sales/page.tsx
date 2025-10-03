@@ -13,7 +13,7 @@ const Sales = () => {
   return (
     <main className='min-h-screen pb-10'>
       <section>
-        <video autoPlay muted loop className='w-full h-[80vh] object-cover object-top' src={"/sellVideo.mp4"} />
+        <video preload='auto' autoPlay muted loop className='w-full h-[80vh] object-cover object-top' src={"/sellVideo.mp4"} />
         <SearchProperty />
       </section>
       <section className='flex items-center gap-5 flex-col max-w-3xl mx-auto mb-5'>
