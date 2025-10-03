@@ -4,7 +4,7 @@ import FeatureProperties from './FeatureProperties'
 
 const Feature = () => {
   return (
-    <section className='h-full py-10 bg-white px-20'>
+    <section className='h-full py-10 bg-white px-5 md:px-20'>
       <Title content='Featured Properties' />
         <FeatureProperties />
     </section>

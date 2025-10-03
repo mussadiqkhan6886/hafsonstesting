@@ -70,8 +70,9 @@ const SearchProperty = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button type="submit">
+          <button type="submit" aria-label="Search">
             <FaSearch className='absolute right-3 top-8 cursor-pointer text-gray-600' />
+            <span className="sr-only">Search</span>
           </button>
         </div>
       </form>
