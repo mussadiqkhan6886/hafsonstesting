@@ -1,4 +1,5 @@
 export const menu = [
+    {title: "About", link: "/about"},
     {title: "Sales", link: "/sales"},
     {title: "Projects", link: "/our-projects"},
     {title: "Lettings", link: "/lettings"},
