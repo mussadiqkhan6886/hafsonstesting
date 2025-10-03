@@ -23,7 +23,7 @@ const About = () => {
             <h4 className='font-bold text-2xl mb-4'>We are Experts</h4>
             <p>Information and communication are vital strengths in these unprecedented times. Our experts provide up-to-date market insight and analysis across all property markets via our insight & opinion hub.</p>
           </div>
-          <Image src={"/main2.jpg"} alt='main' width={500} height={500} className='w-full h-[500px] object-cover object-center' />
+          <Image src={"/main2.webp"} alt='main' width={500} height={500} className='w-full h-[500px] object-cover object-center' />
         </article>
         <article className='flex gap-10 flex-col md:flex-row'>
           <Image src={"/main.jpg"} alt='main' width={500} height={500} className='w-full h-[500px] object-cover object-center'/>

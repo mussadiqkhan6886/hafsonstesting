@@ -20,7 +20,7 @@ export default function Home() {
       <SearchProperty />
       <Feature />
       <section className="relative h-screen">
-        <Image src={"/main2.jpg"} alt="main" width={1000} height={1000} className="w-full h-full object-cover object-center" />
+        <Image src={"/main2.webp"} alt="main" width={1000} height={1000} className="w-full h-full object-cover object-center" />
         <div className="bg-main left-20 top-10 md:top-20 absolute text-center px-2 md:px-10 py-5 w-[50%] shadow-lg shadow-black/40 ">
           <h4 className={`text-3xl md:text-4xl mb-2 ${instrumentSerif.className}`}>Request Your Free Valuation</h4>
           <p className="md:text-lg text-sm font-thin ">Our local experts will provide a free, no-obligation property valuation.</p>
