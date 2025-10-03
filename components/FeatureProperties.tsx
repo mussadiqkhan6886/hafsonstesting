@@ -21,8 +21,7 @@ const FeatureProperties = () => {
         spaceBetween={10}
         breakpoints={{
         200: {slidesPerView: 1, spaceBetween: 0},
-        320: {slidesPerView: 1, spaceBetween: 0},
-        600: {slidesPerView: 2, spaceBetween: 0},
+        470: {slidesPerView: 2, spaceBetween: 0},
         890: { slidesPerView: 3, spaceBetween: 20 },
         1024: { slidesPerView: 4, spaceBetween: 30 },
       }}
@@ -30,9 +29,9 @@ const FeatureProperties = () => {
       {properties.filter(item => item.featured).map((item, i) => (
         <SwiperSlide key={i}>
           <Link href={`/${item.type === "buying" ? "sales" : "lettings"}/${item.id}`}>
-            <div className='w-full'>
+            <div className='w-full h-[150px] sm:h-[160px]'>
               <h3 className={`absolute text-xl text-black left-2 top-2 px-2 bg-main`}>{item.type}</h3>
-                <Image className='w-full h-full' src={item.images[0]} alt={item.address} width={100} height={100} />
+              <Image className='w-full h-full' src={item.images[0]} alt={item.address} width={100} height={100} />
             </div>
             <h3 className='text-center font-xl font-bold'>${item.price}</h3>
             <p className='text-center font-[400]'>{item.address}</p>
