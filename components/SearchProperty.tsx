@@ -15,11 +15,17 @@ const SearchProperty = () => {
     if (!search.trim()) return
 
     const path = select === "buy" ? "sales" : "lettings"
-    const data = properties.filter(item => item.address.toLowerCase() === search.trim().toLowerCase())
-    if (data.length === 0) {
+
+    // Find the first property that matches the search term (case-insensitive, partial match allowed)
+    const found = properties.find(
+      item => item.address.toLowerCase().includes(search.trim().toLowerCase())
+    )
+
+    if (!found) {
       router.push(`/${path}/not-found`)
     } else {
-      router.push(`/${path}/${search.trim()}`)
+      // Route to /sales/:id or /lettings/:id
+      router.push(`/${path}/${found.id}`)
     }
   }
 

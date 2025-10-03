@@ -4,8 +4,8 @@ import { instrumentSerif } from "@/fonts/font"
 
 const NotFound = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gray-50 px-6 text-center">
-      <h1 className={`${instrumentSerif.className} text-[100px] font-bold text-main leading-none`}>
+    <section className="min-h-screen flex flex-col pt-25 justify-center items-center bg-gray-50 px-6 text-center">
+      <h1 className={`${instrumentSerif.className} text-[100px] font-bold text-black leading-none`}>
         404
       </h1>
       <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mt-4">
@@ -19,7 +19,7 @@ const NotFound = () => {
       <div className="mt-6 flex gap-4">
         <Link 
           href="/sales" 
-          className="px-5 py-2.5 bg-main text-white rounded-lg hover:bg-main/90 transition"
+          className="px-5 py-2.5 bg-main  rounded-lg hover:bg-main/90 transition"
         >
           Back to Sales
         </Link>
